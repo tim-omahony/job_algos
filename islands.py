@@ -1,19 +1,3 @@
-#   sea.each_with_index do |outer_array, i|
-#     outer_array.each_with_index do |inner_value, j|
-#       find_islands(i, j)
-
-#     ['a', 'b', 'c'].each_with_index do |_value, index|
-#       puts(index)
-#     end
-
-# [[1, 2, 3], [1, 3,5], [2, 3, 4]]
-
-# [[1, 2, 3], 
-# [1, 3, 5], 
-# [2, 3, 4]]
-
-
-
 def numIslands(chart):
   if len(chart) == 0:
       return 0
