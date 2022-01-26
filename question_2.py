@@ -4,6 +4,7 @@ from itertools import chain
 def group_anagrams(words):
   data = {}
   for k in words:
+    print(k)
     key = ''.join(sorted(k))
     if key in data:
       data[key].append(k)
