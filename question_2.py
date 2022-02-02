@@ -11,7 +11,8 @@ def group_anagrams(words):
     else: 
       data[key] = [k]
 
-  print(flat_list(data))
+  return data
+  # print(flat_list(data))
 
 def flat_list(dictionary):
   new_list = []
@@ -24,4 +25,5 @@ def flat_list(dictionary):
 def flatten_dict_values(dictionary):
     return list(chain(*dictionary.values()))
 
-group_anagrams(['cat', 'pat', 'won', 'god', 'now', 'apt', 'dog'])
+# group_anagrams(['cat', 'pat', 'won', 'god', 'now', 'apt', 'dog'])
+print(group_anagrams(['cat', 'pat', 'won', 'god', 'now', 'apt', 'dog']))
