@@ -2,15 +2,34 @@
 # For arr = ["Daisy", "Rose", "Hyacinth", "Poppy"], the output should be 
 # solution(arr) = "DRHPaoyoisapsecpyiynth"
 
+# def solution(a)
+#   0.upto(a.max_by(&:size).size).flat_map {|i| a.map {|elem| elem[i] } }.join
+# end
+
+# puts solution(["Daisy", "Rose", "Hyacinth", "Poppy"])
 
 def solution(a):
   final_string = ""
+  longest_str = max(a, key=len)
   for word in a:
     char_array = [char for char in word]
     print(char_array)
-    for i in range(len(char_array)):
-      for j in range(len(char_array[0])):
-        final_string += char_array[j]
+    for i in range(len(longest_str)):
+      
+      for i in range(len(char_array)):
+        for j in range(len(char_array[0])):
+          final_string += char_array[j]
+          print(final_string)
   return final_string
 
-print(solution(["Daisy", "Rose", "Hyacinth", "Poppy"]))
+def jonny_solution(a):
+  words = []
+  longest_str = max(a, key=len)
+  for i in range(len(longest_str)):
+    for word in a:
+      print(word[i])
+      if i < len(word):
+        words.append(word[i])
+  return ''.join(words)
+
+print(jonny_solution(["Daisy", "Rose", "Hyacinth", "Poppy"]))
