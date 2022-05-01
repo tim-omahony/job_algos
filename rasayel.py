@@ -35,20 +35,18 @@
 
 # class Stack:
 #     def __init__(self):
-#         # initialises the stack using None to indicate no value and -float('inf') so that the first element which is added is the max
+#         # initialises the stack from float('inf') -float('inf') so that the first element which is added is the max
 #         self.stack = [(float('inf'), -float('inf'))]
 
 #     def push(self, x):
 #         return self.stack.append(x)
 
 #     def pop(self):
-#         # removes the top element
 #         self.stack.pop()
 #         return
 
 #     def max(self):
-#         # returns the max element in the stack
-#         return self.stack[-1][1]
+#         return self.stack[-1]
 
 
 # new_stack = Stack()
