@@ -13,3 +13,17 @@ def group_anagrams(array)
 end
 
 puts group_anagrams(['cat', 'pat', 'won', 'god', 'now', 'apt', 'dog'])
+
+
+# ↓ jon explanation 
+# so
+# cat, act, tab, bat
+
+# cat becomes act
+# {act => [cat]}
+# act becomes act
+# {act => [cat, act]}
+# tab becomes abt
+# {act => [cat, act], abt => [tab]}
+# bat becomes abt
+# {act => [cat, act], abt => [tab, bat]}
