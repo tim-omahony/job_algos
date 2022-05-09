@@ -1,3 +1,5 @@
+require "set"
+
 def remove_dupes(string)
   count_hash = Hash.new
   new_string = ""
@@ -15,3 +17,12 @@ def remove_dupes(string)
 end
 
 puts remove_dupes("AABACC")
+
+
+def remove_dupes_set(string)
+  set = Set.new
+  string.each_char {|ch| set << ch}
+  set.to_a.join
+end
+
+puts remove_dupes_set("AABACC")
