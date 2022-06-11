@@ -11,7 +11,7 @@ def dupe_nums(array)
       dup_array << num unless dup_array.include?(num)
     end
   end
-  dup_array
+  dup_array.join
 end
 
 puts dupe_nums([1,1,2,3,5,6,3,4,2])
